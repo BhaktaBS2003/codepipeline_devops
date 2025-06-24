@@ -1,5 +1,5 @@
 ### STAGE 1: Download and Update the System ###
-FROM node:22-alpine AS build
+FROM public.ecr.aws/docker/library/node:22-alpine AS build
 WORKDIR /app
 COPY package*.json .
 RUN npm install
